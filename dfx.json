@@ -1,0 +1,8 @@
+{
+  "canisters": {
+    "tracify": {
+      "type": "motoko",
+      "main": "src/main.mo"
+    }
+  }
+}
