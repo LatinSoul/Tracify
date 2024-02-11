@@ -1,18 +1,18 @@
+import Time "mo:base/Time";
+
 actor class TaskActor {
+  var id : Text;
+  var timestamp : Time;
   var name : Text;
-  var description : Text;
+  var desc : Text;
   var status : Text;
 
-  public func init(name' : Text, description' : Text, status' : Text) {
+  // Init Function
+  public func init(id' : Text, timestamp' : Time, name' : Text, desc' : Text, status' : Text) {
+    id := id';
+    timestamp := timestamp';
     name := name';
-    description := description';
+    desc := desc';
     status := status';
-  }
-
-  // Methods for CRUD operations
-  public func updateName(newName : Text) : async () {
-    name := newName;
-  }
-
-  // Other CRUD methods...
+  };
 };
